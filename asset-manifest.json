@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/utilitaries/static/css/main.e6c13ad2.css",
+    "main.js": "/utilitaries/static/js/main.2ebfb524.js",
+    "static/js/453.33307ef8.chunk.js": "/utilitaries/static/js/453.33307ef8.chunk.js",
+    "static/media/bson-to-json.jpg": "/utilitaries/static/media/bson-to-json.6dffd5e7cd2cf9b3ee83.jpg",
+    "static/media/json-to-excel.png": "/utilitaries/static/media/json-to-excel.23e9e1584c0aeb3ca406.png",
+    "index.html": "/utilitaries/index.html",
+    "main.e6c13ad2.css.map": "/utilitaries/static/css/main.e6c13ad2.css.map",
+    "main.2ebfb524.js.map": "/utilitaries/static/js/main.2ebfb524.js.map",
+    "453.33307ef8.chunk.js.map": "/utilitaries/static/js/453.33307ef8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.2ebfb524.js"
+  ]
+}
