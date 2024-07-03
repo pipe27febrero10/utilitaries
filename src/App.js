@@ -4,7 +4,7 @@ import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import HomePage from './pages/HomePage';
 import BSONToJSON from './components/BSONToJSON';
 import JSONToExcel from './components/JSONToExcel';
-import RUCGenerator from './components/RUCGenerator';
+import RUCGenerator from './components/RUCGenerator/RUCGenerator';
 import RUTGenerator from './components/RUTGenerator';
 
 const theme = createTheme({

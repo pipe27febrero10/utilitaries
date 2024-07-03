@@ -1,61 +1,64 @@
-import React, { useState } from 'react';
-import { Container, Typography, Button, TextField } from '@mui/material';
-import { styled } from '@mui/system';
-import * as XLSX from 'xlsx';
-import * as yup from 'yup';
-import { flatten } from 'flat';
+import React, { useState } from "react";
+import { Container, Typography, Button, TextField } from "@mui/material";
+import { styled } from "@mui/system";
+import { utils, writeFile } from "xlsx";
+import * as yup from "yup";
+import { flatten } from "flat";
 
-const Root = styled('div')(({ theme }) => ({
-  minHeight: '100vh',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: '#fff',
+const Root = styled("div")(({ theme }) => ({
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "#fff",
   padding: theme.spacing(4),
 }));
 
 const ConvertButton = styled(Button)(({ theme }) => ({
-  backgroundColor: '#007bff',
-  color: '#fff',
-  textTransform: 'none',
-  borderRadius: '9999px',
-  height: '40px',
+  backgroundColor: "#007bff",
+  color: "#fff",
+  textTransform: "none",
+  borderRadius: "9999px",
+  height: "40px",
   marginTop: theme.spacing(2),
-  '&:hover': {
-    backgroundColor: '#0056b3',
+  "&:hover": {
+    backgroundColor: "#0056b3",
   },
 }));
 
 const JSONToExcel = () => {
-  const [jsonInput, setJsonInput] = useState('');
-  const [error, setError] = useState('');
+  const [jsonInput, setJsonInput] = useState("");
+  const [error, setError] = useState("");
 
-  const jsonSchema = yup.array().of(
-    yup.object().typeError('Each item in the array must be an object')
-  );
-
+  const jsonSchema = yup
+    .array()
+    .of(yup.object().typeError("Each item in the array must be an object"));
 
   const handleConvert = async () => {
     try {
       const json = JSON.parse(jsonInput);
       await jsonSchema.validate(json);
 
-      const flattenedJsonArray = json.map(item => flatten(item));
+      const flattenedJsonArray = json.map((item) => flatten(item));
 
-      const worksheet = XLSX.utils.json_to_sheet(flattenedJsonArray);
-      const workbook = XLSX.utils.book_new();
+      const worksheet = utils.json_to_sheet(flattenedJsonArray);
+      const workbook = utils.book_new();
 
-      XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
-      XLSX.writeFile(workbook, 'converted_excel.xlsx');
-      setError('');
+      utils.book_append_sheet(workbook, worksheet, "Sheet1");
+      writeFile(workbook, "converted_excel.xlsx");
+      setError("");
     } catch (e) {
-        if (e.name === 'ValidationError') {
-            setError('Invalid JSON format: Please provide a valid JSON array of objects');
-          } else {
-            setError('Invalid JSON: Please ensure your input is a valid JSON array');
-          }
-           console.error('Invalid JSON', e);
+      if (e.name === "ValidationError") {
+        setError(
+          "Invalid JSON format: Please provide a valid JSON array of objects"
+        );
+      } else {
+        setError(
+          "Invalid JSON: Please ensure your input is a valid JSON array"
+        );
+      }
+      console.error("Invalid JSON", e);
     }
   };
 
