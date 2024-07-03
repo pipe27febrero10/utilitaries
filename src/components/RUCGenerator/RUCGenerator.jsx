@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Button, TextField, Box } from '@mui/material';
-import { generateRUC } from '../utils/generators';
+import { generateRUC } from '../../utils/generators';
 
 const RUCGenerator = () => {
   const [ruc, setRuc] = React.useState('');
@@ -20,7 +20,7 @@ const RUCGenerator = () => {
         alignItems: "center",
         backgroundColor: "#fff",
         textAlign: "center",
-        padding: 4,
+        padding: 4
       }}
     >
       <Typography variant="h4" gutterBottom>
