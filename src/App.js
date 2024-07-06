@@ -10,7 +10,7 @@ import RUTGenerator from './components/RUTGenerator';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1C80E4',
+      main: '#1B5EE4',
     },
     secondary: {
       main: '#ff5722',
