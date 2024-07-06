@@ -39,10 +39,9 @@ const HomePage = () => {
               <Card >
                 <CardMedia
                   component="img"
-                  alt={tool.alt}
                   height="140"
                   image={tool.image}
-                  title={tool.title}
+                  title={tool.alt}
                 />
                 <CardContent>
                   <Typography variant="h6" component="div">
