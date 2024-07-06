@@ -8,10 +8,10 @@ import RutGeneratorImage from '../assets/images/rut-generator.webp';
 import RucGeneratorImage from '../assets/images/ruc-generator.webp';
 
 const tools = [
-    { title: "BSON to JSON converter", image: BsonToJsonImage, path: "/bson-to-json" },
-    { title: "JSON to Excel", image: JsonToExcelImage, path: "/json-to-excel" },
-    { title: "RUC generator", image: RucGeneratorImage, path: "/ruc-generator" },
-    { title: "RUT generator", image: RutGeneratorImage, path: "/rut-generator" }
+    { title: "BSON to JSON converter", image: BsonToJsonImage, path: "/bson-to-json", alt: "BSON to JSON converter image"},
+    { title: "JSON to Excel", image: JsonToExcelImage, path: "/json-to-excel", alt: "JSON to Excel image"},
+    { title: "RUC generator", image: RucGeneratorImage, path: "/ruc-generator", alt: "RUC generator image"},
+    { title: "RUT generator", image: RutGeneratorImage, path: "/rut-generator", alt: "RUT generator image"}
   ];
 
   const StyledLink = styled(Link)({
