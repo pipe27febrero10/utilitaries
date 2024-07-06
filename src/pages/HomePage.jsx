@@ -2,14 +2,16 @@ import React from 'react';
 import { Container, Grid, Card, CardMedia, CardContent, Typography, AppBar, Toolbar } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
-import BsonToJsonImage from '../assets/images/bson-to-json.jpg';
-import JsonToExcelImage from '../assets/images/json-to-excel.png';
+import BsonToJsonImage from '../assets/images/bson-to-json.webp';
+import JsonToExcelImage from '../assets/images/json-to-excel.webp';
+import RutGeneratorImage from '../assets/images/rut-generator.webp';
+import RucGeneratorImage from '../assets/images/ruc-generator.webp';
 
 const tools = [
     { title: "BSON to JSON converter", image: BsonToJsonImage, path: "/bson-to-json" },
     { title: "JSON to Excel", image: JsonToExcelImage, path: "/json-to-excel" },
-    { title: "RUC generator", image: "https://cdn.usegalileo.ai/stability/64807295-de39-4bce-99b3-3a7a0b3e2bee.png", path: "/ruc-generator" },
-    { title: "RUT generator", image: "https://cdn.usegalileo.ai/stability/e384938b-5d08-452c-9730-0596ed6111ef.png", path: "/rut-generator" }
+    { title: "RUC generator", image: RucGeneratorImage, path: "/ruc-generator" },
+    { title: "RUT generator", image: RutGeneratorImage, path: "/rut-generator" }
   ];
 
   const StyledLink = styled(Link)({
