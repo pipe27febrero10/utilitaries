@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/utilitaries/static/css/main.e6c13ad2.css",
-    "main.js": "/utilitaries/static/js/main.38d8191a.js",
+    "main.js": "/utilitaries/static/js/main.444299fb.js",
     "static/js/453.33307ef8.chunk.js": "/utilitaries/static/js/453.33307ef8.chunk.js",
     "static/media/rut-generator.webp": "/utilitaries/static/media/rut-generator.63da64b1c4f4f13f8060.webp",
     "static/media/ruc-generator.webp": "/utilitaries/static/media/ruc-generator.8b37e1d45d0f8b6995d7.webp",
@@ -9,11 +9,11 @@
     "static/media/json-to-excel.webp": "/utilitaries/static/media/json-to-excel.e20cd6988fbd8f6b468a.webp",
     "index.html": "/utilitaries/index.html",
     "main.e6c13ad2.css.map": "/utilitaries/static/css/main.e6c13ad2.css.map",
-    "main.38d8191a.js.map": "/utilitaries/static/js/main.38d8191a.js.map",
+    "main.444299fb.js.map": "/utilitaries/static/js/main.444299fb.js.map",
     "453.33307ef8.chunk.js.map": "/utilitaries/static/js/453.33307ef8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.38d8191a.js"
+    "static/js/main.444299fb.js"
   ]
 }
