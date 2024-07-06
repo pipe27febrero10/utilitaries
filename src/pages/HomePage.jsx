@@ -39,7 +39,7 @@ const HomePage = () => {
               <Card >
                 <CardMedia
                   component="img"
-                  alt={tool.title}
+                  alt={tool.alt}
                   height="140"
                   image={tool.image}
                   title={tool.title}
