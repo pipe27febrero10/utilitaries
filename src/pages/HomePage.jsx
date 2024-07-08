@@ -36,7 +36,7 @@ const HomePage = () => {
           {tools.map((tool, index) => (
             <Grid item key={index} xs={12} sm={6} md={3}>
              <StyledLink to={tool.path}>
-              <Card >
+              <Card style={{ height: '100%'}}>
                 <CardMedia
                   component="img"
                   height="140"
