@@ -1,11 +1,12 @@
 {
   "name": "utilitaries",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://pipe27febrero10.github.io/utilitaries",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.15.20",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +17,7 @@
     "flat": "^6.0.1",
     "flatten": "^1.0.3",
     "json2xls": "^0.1.2",
+    "mongodb": "^6.8.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -29,10 +31,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build --repo https://github.com/pipe27febrero10/utilitaries.git",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build --repo https://github.com/pipe27febrero10/utilitaries.git",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:cov": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

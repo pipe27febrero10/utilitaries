@@ -5,7 +5,8 @@ import HomePage from './pages/HomePage';
 import BSONToJSON from './components/BSONToJSON';
 import JSONToExcel from './components/JSONToExcel';
 import RUCGenerator from './components/RUCGenerator/RUCGenerator';
-import RUTGenerator from './components/RUTGenerator';
+import RUTGenerator from './components/RUTGenerator/RUTGenerator';
+import MongoIdGenerator from './components/MongoIdGenerator/MongoIdGenerator';
 
 const theme = createTheme({
   palette: {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/json-to-excel" element={<JSONToExcel/>} />
           <Route path="/ruc-generator" element={<RUCGenerator/>} />
           <Route path="/rut-generator" element={<RUTGenerator/>} />
+          <Route path="/mongo-id-generator" element={<MongoIdGenerator/>} />
         </Routes>
       </Router>
     </ThemeProvider>

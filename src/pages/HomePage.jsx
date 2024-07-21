@@ -11,7 +11,8 @@ const tools = [
     { title: "BSON to JSON converter", image: BsonToJsonImage, path: "/bson-to-json", alt: "BSON to JSON converter image"},
     { title: "JSON to Excel", image: JsonToExcelImage, path: "/json-to-excel", alt: "JSON to Excel image"},
     { title: "RUC generator", image: RucGeneratorImage, path: "/ruc-generator", alt: "RUC generator image"},
-    { title: "RUT generator", image: RutGeneratorImage, path: "/rut-generator", alt: "RUT generator image"}
+    { title: "RUT generator", image: RutGeneratorImage, path: "/rut-generator", alt: "RUT generator image"},
+    { title: "Mongo ID generator", image: RutGeneratorImage, path: "/mongo-id-generator", alt: "Mongo ID generator image"},
   ];
 
   const StyledLink = styled(Link)({

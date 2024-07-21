@@ -11,7 +11,9 @@ jest.mock('../../utils/generators', () => ({
 test('renders RUCGenerator component', () => {
   render(<RUCGenerator />);
   const headingElement = screen.getByText(/Generate a unique RUC/i);
+  const paragraphElement = screen.getByText(/A RUC is a unique identifier for a user/i);
   expect(headingElement).toBeInTheDocument();
+  expect(paragraphElement).toBeInTheDocument();
 });
 
 test('initially renders with an empty RUC input field', () => {

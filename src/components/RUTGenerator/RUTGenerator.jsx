@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Button, TextField, Box } from "@mui/material";
-import { generateRUTs } from "../utils/generators";
+import { generateRUTs } from "../../utils/generators";
 
 const RUTGenerator = () => {
   const [rut, setRut] = React.useState("");
