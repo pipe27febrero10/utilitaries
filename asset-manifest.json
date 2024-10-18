@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/utilitaries/static/css/main.e6c13ad2.css",
-    "main.js": "/utilitaries/static/js/main.45453aea.js",
+    "main.js": "/utilitaries/static/js/main.5cf04f5c.js",
     "static/js/453.33307ef8.chunk.js": "/utilitaries/static/js/453.33307ef8.chunk.js",
     "static/media/mongo-id-generator.webp": "/utilitaries/static/media/mongo-id-generator.0b4a221a52c01c996c89.webp",
     "static/media/rut-generator.webp": "/utilitaries/static/media/rut-generator.63da64b1c4f4f13f8060.webp",
@@ -10,11 +10,11 @@
     "static/media/json-to-excel.webp": "/utilitaries/static/media/json-to-excel.e20cd6988fbd8f6b468a.webp",
     "index.html": "/utilitaries/index.html",
     "main.e6c13ad2.css.map": "/utilitaries/static/css/main.e6c13ad2.css.map",
-    "main.45453aea.js.map": "/utilitaries/static/js/main.45453aea.js.map",
+    "main.5cf04f5c.js.map": "/utilitaries/static/js/main.5cf04f5c.js.map",
     "453.33307ef8.chunk.js.map": "/utilitaries/static/js/453.33307ef8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.45453aea.js"
+    "static/js/main.5cf04f5c.js"
   ]
 }
